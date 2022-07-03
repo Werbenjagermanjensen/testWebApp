@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>The Verse of Tao-Ch'uan</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+            }
+
+            .header {
+                padding: 80px;
+                text-align: center;
+                background: #1abc9c;
+                color: white;
+            }
+
+            .header h1 {
+                font-size: 40px;
+            }
+
+            /* Style the top navigation bar */
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            /* Style the navigation bar links */
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+            /* Right-aligned link */
+            .navbar a.right {
+                float: right;
+            }
+
+            /* Change color on hover */
+            .navbar a:hover {
+                background-color: #ddd;
+                color: #333;
+            }
+
+            /* Column container */
+            .main {  
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            /* Create two unequal columns that sit next to each other */
+            /* Sidebar/left column */
+            .col1 {
+                flex: 50%;
+                background-color: #f1f1f1;
+                padding: 20px;
+            }
+
+            /* Main column */
+            .col2 {   
+                flex: 50%;
+                background-color: white;
+                padding: 20px;
+            }
+
+            .image {
+                background-color: #aaa;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: #ddd;
+                color: #333;
+            }
+
+            /* Responsive layout - when the screen is less than 700px wide, make the two columns stack 
+            on top of each other instead of next to each other */
+            @media screen and (max-width: 400px) {
+                .main {   
+                    flex-direction: column;
+                }
+            }
+
+            /* Responsive layout - when the screen is less than 400px wide, make the navigation links 
+            stack on top of each other instead of next to each other */
+            @media screen and (max-width: 300px) {
+                .navbar a {
+                    float: none;
+                    width:100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>The Verse of Tao-Ch'uan</h1>
+            <p>
+                <br/>
+                Tao-Ch'uan lived in 12th century China. Listen to his song
+            </p>
+        </div>
+
+        <div class="navbar">
+            <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+            <a href="#" class="right">Link4</a>
+        </div>
+
+        <div class="main">
+            <div class="col1">
+                <h2>
+                    "Subhuti, these fearless bodhisattvas do not create the perception of a self. 
+                    Nor do they create the perception of a being, a life, or a soul"
+                </h2>
+                <h3>
+                    <br/>
+                    Perfect space is neither long nor short. Listen to my song:
+                </h3>
+                <p>
+                    <br/>
+                    Perception of a dharma, perception of no dharma<br/><br/>
+                    hands open then they close<br/><br/>
+                    floating clouds reveal blue sky<br/><br/>
+                    for a thousand miles Heavan looks the same
+                </p>
+            </div>
+            <div class="col2">
+                <h2>
+                    "Surely, Subhuti, fearless bodhisattvas do not cling to a dharma, 
+                    much less to no dharma"
+                </h2>
+                <h3>
+                    <br/>
+                    You can't trade gold for gold. You can't wash water with water. Listen to my song:
+                </h3>
+                <p>
+                    <br/>
+                    Climbing a tree isn't very strange<br/><br/>
+                    even heroes fall from a cliff<br/><br/>
+                    fish don't bite on a cold winter night<br/><br/>
+                    forget the empty boat and bring back the moon!
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Translation by Red Pine</p>
+            <h5>Lord Buddha:</h5>
+            <div class="image">
+                <img src="resources/buddha.jpg" alt="Gautama Buddha" width="960" height="540">
+            </div>
+        </div>
+    </body>
+</html>

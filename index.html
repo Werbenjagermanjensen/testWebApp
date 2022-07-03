@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>The Verse of Tao-Ch'uan</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>The Verse of Tao-Ch'uan</h1>
+            <p id ="demo">
+                <br>
+                Tao-Ch'uan lived in 12th century China. Listen to his song
+            </p>
+	    <button type="button" onclick="myFunction()">Click to Change</button>
+	    <button type="button" onclick="myUndoFunction()">Click to Undo</button>
+        </div>
+
+        <div class="navbar">
+            <a href="https://www.freecodecamp.org" target="_blank" rel="noopener noreferrer">Code Camp</a>
+            <a href="page1.html" target="_blank" rel="noopener noreferrer">Page1</a>
+            <a href="#S1">Link3</a>
+            <a href="#S2" class="right">Link4</a>
+        </div>
+
+        <div class="main">
+            <div id="S1" class="col1" style="background-image: url('resources/buddha_realm.jpg');">
+                <h3>
+                    "Subhuti, these fearless bodhisattvas do not create the perception of a self. 
+                    Nor do they create the perception of a being, a life, or a soul"
+                </h3>
+                <pre>
+                    <b>Perfect space is neither long nor short. Listen to my song:</b>
+
+                    <hr>
+
+                    Perception of a dharma, perception of no dharma
+
+                    hands open then they close
+
+                    floating clouds reveal blue sky
+
+                    for a thousand miles Heavan looks the same
+                </pre>
+            </div>
+            <div id="S2" class="col2">
+            	<img src="resources/buddha_drawing.jpg" alt="Gautama Buddha"
+            	style="float:right;width:760px;height:1064px;" onclick="myFunction()">
+				<script>
+				function myFunction() {
+				  alert("You clicked the Buddha!");
+				}
+				</script>
+                <h2>
+                    "Surely, Subhuti, fearless bodhisattvas do not cling to a dharma, 
+                    much less to no dharma"
+                </h2>
+                <h3>
+                    <br>
+                    <i>You can't trade gold for gold. You can't wash water with water. Listen to my song:</i>
+                </h3>
+                <p>
+                    <br>
+                    Climbing a tree isn't very strange<br><br>
+                    even heroes fall from a cliff<br><br>
+                    fish don't bite on a cold winter night<br><br>
+                    forget the empty boat and bring back the <mark>moon!</mark>
+                </p>
+                <table id="tLineage">
+                	<caption>Holy Lineage</caption>
+                	<tr>
+                		<th>Buddha</th>
+                		<th>Bodhisattva</th>
+               		</tr>
+               		<tr>
+               			<td>Dipankara</td>
+               			<td>Gautama</td>
+              		</tr>
+              	</table>
+            </div>
+        </div>
+ 
+        <!-- comment here -->
+        <div class="footer">
+            <p>Translation by <del>some guy</del> <abbr title="Red Pine">RP</abbr></p>
+            <h5 style="border:2px solid DodgerBlue;">Lord Buddha:</h5>
+            <div class="image">
+                <img title="Lord Buddha" src="resources/buddha.jpg" alt="Gautama Buddha" 
+                style="width:960px;height:540px;">
+            </div>
+        </div>
+
+	<script>
+	    function myFunction() {
+  	        document.getElementById("demo").innerHTML = "You clicked the button";
+	    }
+	</script>
+
+	<script src="js/undoScript.js"></script>
+    </body>
+</html>
